@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git url: 'https://github.com/akshatluthra/DevOps-Two-Tier-App.git' branch: 'main'
+                git url: 'https://github.com/akshatluthra/DevOps-Two-Tier-App.git', branch: 'main'
             }
         }
 
