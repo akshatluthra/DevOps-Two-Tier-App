@@ -11,7 +11,7 @@ pipeline{
         stage('Build'){
             steps{
                 sh '''
-                    docker --version
+                    docker build -t myapp:v1 .
                    '''
             }
         }
