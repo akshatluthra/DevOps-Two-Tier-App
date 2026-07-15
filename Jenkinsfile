@@ -11,6 +11,8 @@ pipeline{
         stage('Build'){
             steps{
                 sh '''
+                    apt-get update
+                    apt-get install -y docker.io
                     docker --version
                    '''
             }
